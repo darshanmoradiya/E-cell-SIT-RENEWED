@@ -3,7 +3,7 @@ body {
 }
 
 :root {
-    --maincolor: #FD6420;
+    --maincolor: #53f9ff;
 }
 
 html::-webkit-scrollbar {
@@ -43,7 +43,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 .nav-link {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
+    background-color: whitesmoke;
     border-radius: 9px;
 }
 
@@ -52,18 +53,19 @@ html::-webkit-scrollbar-thumb {
 }
 
 .active {
-    background: var(--bs-orange);
+    background: #53f9ff;
     color: black !important;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
-    background: var(--bs-orange);
+    background: #53f9ff;
     color: black !important;
 }
 
 .about-section {
+    background-color: white;
     padding: 130px 0px 60px;
 }
 
@@ -74,20 +76,20 @@ html::-webkit-scrollbar-thumb {
 }
 
 .title h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 45px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
 
 .title span {
-    color: #FD6420;
+    color: #1655F2;
     font-size: 45px;
     font-weight: 700;
 }
 
 p {
-    color: #FDBD28;
+    color: #000000;
     line-height: 1.8;
     margin: 0 0 15px;
     padding-bottom: 12px;
@@ -96,7 +98,7 @@ p {
 
 img {
     border-radius: 5%;
-    border: 2px solid white;
+    border: 2px solid #53f9ff;
 }
 
 .social {
@@ -121,9 +123,27 @@ img {
     transition: all 0.5s;
 }
 
+.social li a.facebook {
+    background-color: #3b5998;
+    /* Facebook color */
+}
+
+.social li a.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social li a.twitter {
+    background-color: #00acee;
+    /* Twitter color */
+}
+
+.social li a.linkedin {
+    background-color: #0077b5;
+    /* LinkedIn color */
+}
+
 .footer {
-    background: #000F33;
-    font-family: 'Josefin Slab', serif;
+    background: #000000;
 }
 
 @media only screen and (max-width: 992px) {
@@ -139,7 +159,7 @@ img {
 .importantlinks * {
     font-family: 'Forum', cursive;
     font-size: small;
-    color: rgba(133, 132, 132, 0.877);
+    color: #ffffff;
 }
 
 .importantlinks a {
@@ -156,8 +176,8 @@ img {
 
 .guide-section {
     padding: 20px 0;
-    background-color: #000F33;
-    color: #FD6420;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -176,7 +196,7 @@ img {
 .guide-section .guide-image {
     max-width: 200px;
     max-height: 300px;
-    margin-left: 44%;
+    margin-left: 43%;
 }
 
 .guide-section .guide-image .guide {
@@ -184,6 +204,7 @@ img {
 }
 
 .guidef {
+    color: black;
     font-family: 'Diphylleia', sans-serif;
 }
 
@@ -197,8 +218,8 @@ img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #1655F2;
-    color: white;
+    background-color: #000F33;
+    color: rgb(0, 0, 0);
     padding: 5px;
     border-radius: 5px;
     visibility: hidden;
@@ -219,8 +240,8 @@ img {
 
 .collaborators-section {
     padding: 80px 0;
-    background-color: #000F33;
-    color: #FD6420;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -246,7 +267,7 @@ img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #1655F2;
+    background-color: #000F33;
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -261,4 +282,26 @@ img {
     visibility: visible;
     white-space: nowrap;
     opacity: 1;
+}
+
+.dropdown-menu {
+    background-color: #53f9ff;
+    /* Set your desired background color */
+    border-radius: 12px;
+    max-width: 10px;
+}
+
+.dropdown-item {
+    background-color: #53f9ff;
+    color: black !important;
+    border-radius: 9px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: #fff;
+    /* Set your desired hover background color */
+    color: black !important;
+    border-radius: 9px;
 }
