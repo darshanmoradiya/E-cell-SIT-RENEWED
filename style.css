@@ -49,7 +49,7 @@ html::-webkit-scrollbar-thumb {
     /*to be removed*/
 }
 
-/* .preloadervideoblock {
+.preloadervideoblock {
     flex-shrink: 20%;
     transform: scale(1);
     padding-left: 3vw;
@@ -89,7 +89,7 @@ html::-webkit-scrollbar-thumb {
 
 .nav_beforepreload {
     display: none;
-} */
+}
 
 
 /*-----------------ABOVE WAS PRELOADER-------------------*/
