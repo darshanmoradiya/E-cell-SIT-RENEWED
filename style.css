@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-    --maincolor: #FD6420;
+    --maincolor: #2a6668;
 }
 
 html::-webkit-scrollbar {
@@ -24,7 +24,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: #000F33;
+    background: #ffffff;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -64,16 +64,15 @@ html::-webkit-scrollbar-thumb {
     text-align: center;
     padding-right: 9px;
     background: rgb(22, 11, 30);
-    background: linear-gradient(90deg, #1655F2 14%, #FDBD28 49%, #FD6420 85%);
+    background: linear-gradient(90deg, #1655F2 14%, #F5F8FF 49%, #FD6420 85%);
     background-size: 200% auto;
     color: #160B1E;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 4s linear infinite;
+    animation: shine 2s linear infinite;
     transform: translateY(2vh);
     font-size: calc(10px + 2vh + 2vw);
-    
 }
 
 @keyframes shine {
@@ -133,14 +132,14 @@ body {
 }
 
 .active {
-    background: var(--bs-orange);
+    background: #53f9ff;
     color: black !important;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
-    background: var(--bs-orange);
+    background: #53f9ff;
     color: black !important;
 }
 
@@ -169,12 +168,15 @@ body {
 }
 
 .headervdo {
-    transform: scale(1.5);
-    opacity: 0;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .headervdo_afterpreload {
-    transition: ease-in 5s;
+    transition: ease-in 3s;
     opacity: 100;
 }
 
@@ -201,8 +203,7 @@ body {
     font-family: 'Slabo 27px', serif;
     position: absolute;
     top: 35%;
-    margin-left: 17vw;
-    margin-right: 17vw;
+    margin-left: 39vw;
     font-weight: 600;
     letter-spacing: calc(1vh);
     color: rgb(255, 255, 255);
@@ -227,13 +228,13 @@ body {
     transform: scale(0.8);
     font-family: 'Poiret One', 'Slabo 27px', serif;
     position: absolute;
-    top: 60%;
-    right: 17vw;
+    top: 80%;
+    right: 24vw;
     margin-left: 16vw;
     text-align: center;
-    font-weight: 500;
+    font-weight: bolder;
     letter-spacing: 1vh;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     opacity: 100;
 }
 
@@ -258,14 +259,8 @@ body {
     background: url("https://sm.ign.com/ign_in/screenshot/default/ig-glyph001-74am_dp6a.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    filter: saturate(0);
-    transition: all ease-in 250ms;
-}
-
-.instagram:hover {
     filter: saturate(1);
-    transform: scale(1.05);
-    z-index: 2;
+    transition: all ease-in 250ms;
 }
 
 .facebook {
@@ -273,14 +268,7 @@ body {
     background-position: center;
     background-size: 125%;
     transition: ease-in-out all 250ms;
-    filter: saturate(0);
-}
-
-.facebook:hover {
     filter: saturate(1);
-    transform: scale(1.05);
-    z-index: 2;
-    filter: contrast(0.8);
 }
 
 .linkedin {
@@ -288,27 +276,15 @@ body {
     background-position: center;
     background-size: 110%;
     transition: ease-in-out all 250ms;
-    filter: saturate(0);
-}
-
-.linkedin:hover {
     filter: saturate(1);
-    transform: scale(1.05);
-    z-index: 2;
 }
 
 .twitter {
     background: url("twitter.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    filter: saturate(0);
-    transition: all 250ms ease-in;
-}
-
-.twitter:hover {
     filter: saturate(1);
-    transform: scale(1.05);
-    z-index: 2;
+    transition: all 250ms ease-in;
 }
 
 @media only screen and (max-width: 700px) {
@@ -345,8 +321,8 @@ body {
 }
 
 .midbody {
-    background: #000F33;
-    font-family: 'Diphylleia', sans-serif;
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .quotegenerator {
@@ -388,8 +364,8 @@ body {
 /*------------------Footer Below------------------*/
 
 .footer {
-    background: #000F33;
-    font-family: 'Josefin Slab', serif;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 992px) {
@@ -398,11 +374,14 @@ body {
         flex-direction: column !important;
     }
 }
+.fas_fa-map-marker-alt{
+    color:#000000;
+}
 
 .importantlinks * {
     font-family: 'Forum', cursive;
     font-size: small;
-    color: rgba(133, 132, 132, 0.877);
+    color: rgba(43, 43, 43, 0.877);
 }
 
 .importantlinks a {
@@ -433,4 +412,24 @@ body {
     bottom: 0;
     right: 0;
     transition: 1s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: #53f9ff;
+    /* Set your desired background color */
+}
+
+.dropdown-item {
+    background-color: #53f9ff;
+    color: black !important;
+    border-radius: 9px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: #fff;
+    /* Set your desired hover background color */
+    color: black !important;
+    border-radius: 9px;
 }
